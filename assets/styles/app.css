@@ -1,0 +1,179 @@
+/*body {
+    background-color: rgba(229, 239, 240, 0.61);
+}
+h1{
+    font-family: "Times New Roman", Times, serif;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+ 
+
+modelistion link
+  #show:link, #show:visited {
+    background-color: #1e5aca;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  } 
+  #show:hover, #show:active {
+    background-color: rgba(54, 197, 54, 0.849);
+  }
+
+  #edit:link, #edit:visited {
+    background-color: #f00808d8;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  } 
+   #edit:hover, #edit:active {
+    background-color: rgba(187, 31, 65, 0.849);
+  }
+
+  .create:link, .create:visited {
+    background-color: #1973e7d8;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  } 
+   .create:hover, .create:active {
+    background-color: rgba(59, 134, 163, 0.849);
+  }
+
+
+  #showtable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:50%;
+    margin-left: 40px;
+  }
+  
+  #showtable td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    width:50%;
+  }
+  #showtable th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    width:10%;
+  }
+
+  #showtable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #showtable tr:hover {background-color: #ddd;}
+  
+  .backliste:link, .backliste:visited {
+    margin-left: 40px;
+    background-color: #1973e7d8;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  } 
+  .backliste:hover, .backliste:active {
+    background-color: rgba(59, 134, 163, 0.849);
+  }
+
+
+
+
+
+
+div.divforme {
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  
+}
+
+form textarea {
+  padding: 20px;
+ 
+}
+
+form input{
+  width:100%;
+  background-color: rgb(197, 206, 197);
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+form .btn { 
+  background-color: #1973e7d8;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 50%;
+  margin-left: 20px;
+
+
+}
+.btn:hover{
+  background-color: rgba(59, 134, 163, 0.849);
+}
+li{
+padding: 20px;
+}
+*/
+.table th{
+  background-color: rgba(11, 230, 95, 0.726);
+  width: 40px;
+}
+
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+

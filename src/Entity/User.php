@@ -27,6 +27,10 @@ class User
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $Tel = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $height = null;
+
+
 
     public function getId(): ?int
     {
@@ -89,6 +93,19 @@ class User
     public function setTel(?string $Tel): static
     {
         $this->Tel = $Tel;
+
+        return $this;
+    }
+
+    
+    public function getHeight(): ?string
+    {
+        return $this->height;
+    }
+
+    public function setHeight(?string $height): static
+    {
+        $this->height = $height;
 
         return $this;
     }

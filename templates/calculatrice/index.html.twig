@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calaculatrice{% endblock %}
+
+{% block body %}
+<br>
+<div class="container">
+  <h1>Calculatrice</h1>
+
+  <form  action="{{ path('app_calculatrice_action') }}" method="post">
+     <p>Nombre A :</p>
+    <input type= "number" name="number_a" placeholder="Number A" >
+     <p>Signe :</p>
+    <input type="text" name="signe" placeholder="Entrer le signe d'operation">
+     <p>Nombre B :</p>
+    <input type="number" name="number_b" placeholder="Number B" label=>
+    <button type="submit" class="btn btn-primary">Calculer</button>
+  </form>   
+</div>
+
+
+
+
+{% endblock %}

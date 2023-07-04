@@ -1,3 +1,23 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+calculatrice:
+    path: /calculatrice
+    controller: App\Controller\CalculatriceController::index
+
+calculatrice_action:
+    path: /calculatrice/action
+    controller: App\Controller\CalculatriceController::calculatrice_action
+    methods: [POST]
+  
+
+resultat:
+    path: /resultat
+    controller: App\Controller\ResultatController::index
+
+
+
+manager:
+    path: /manager/add
+    controller: App\Manager\UserManager::add

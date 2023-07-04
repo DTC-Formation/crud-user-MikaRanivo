@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ResultatController!{% endblock %}
+
+{% block body %}
+<div class="container">
+{% if valeur is defined %}
+        {% if erreur %}
+            <p>erreur: {{ erreur}}.</p>
+        {% else %}
+        
+       
+            <p>Résultat :  {{ number_a }} {{ signe }} {{ number_b }} = {{ valeur }}</p>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

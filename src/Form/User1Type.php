@@ -6,17 +6,56 @@ use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+
+
 
 class User1Type extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('Name')
-            ->add('Age')
-            ->add('CIN')
-            ->add('Adress')
-            ->add('Tel')
+            ->add('Name',
+            TextType::class,
+            [
+                "attr"=>[
+                    "placeholder"=>" nom",
+                ]
+            ])
+            ->add('Age',
+            TextType::class,[
+                "attr"=>[
+                    "placeholder"=>"age",
+                ]
+            ])
+            ->add('CIN',
+            TextType::class,[
+                "attr"=>[
+                    "placeholder"=>"CIN",
+                ]
+            ])
+
+            ->add('Adress',
+            TextType::class,[
+                "attr"=>[
+                    "placeholder"=>"Adress",
+                ]
+            ])
+            ->add('Tel',
+            TextType::class,[
+                "attr"=>[
+                    "placeholder"=>"Tel",
+                ]
+            ])
+
+            ->add('height',
+            TextType::class,
+            [
+                "attr"=>[
+                    "class"=>"height-input",
+                    "placeholder"=>"Height",
+                ]
+            ])
         ;
     }
 

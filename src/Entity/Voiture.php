@@ -41,6 +41,18 @@ class Voiture
 
     }
 
+    public function getModele(): ?string
+    {
+        return $this->modele;
+    }
+
+    public function setModele(?string $modele): static
+    {
+        $this->modele = $modele;
+
+        return $this;
+    }
+
     public function getType(): ?string
     {
         return $this->type;

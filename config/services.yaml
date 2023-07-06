@@ -20,11 +20,6 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    App\Repository\VoitureRepository:
-    arguments:
-        - '@doctrine'
-    tags: ['doctrine.repository_service']
-
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

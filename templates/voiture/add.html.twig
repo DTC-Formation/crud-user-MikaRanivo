@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+{% block title %}Add Voiture{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> Ajoute Voiture</h1>
+    <br>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <br>
+    <button  class="btn btn-primary" href="{{ path('app_voiture_index') }}" >{{ button_label|default('Save') }}</button>
+    {{ form_end(form) }}
+
+
+
+</div>
+
+
+{% endblock %}

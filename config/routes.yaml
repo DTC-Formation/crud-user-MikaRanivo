@@ -17,7 +17,3 @@ resultat:
     controller: App\Controller\ResultatController::index
 
 
-
-manager:
-    path: /manager/add
-    controller: App\Manager\UserManager::add

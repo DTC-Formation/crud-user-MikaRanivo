@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Voiture{% endblock %}
+
+{% block body %}
+<div class="container mt-3">
+    <h1>Liste des Utilisateurs</h1>
+    <br>
+    <table  class="table table-bordered">
+        <thead >
+            <tr>
+                <th>Id</th>
+                <th>Type</th>
+                <th>Modele</th>
+                <th>Couleur</th>
+                <th>Imatriculation</th>
+                <th>Marque</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for voiture in voitures %}
+            <tr>
+                <td>{{ voiture.id }}</td>
+                <td>{{ voiture.type }}</td>
+                <td>{{ voiture.modele }}</td>
+                <td>{{ voiture.color }}</td>
+                <td>{{ voiture.number }}</td>
+                <td>{{ voiture.marque }}</td>  
+            </tr>
+            
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>
+   <a class="btn btn-primary" href="{{ path('app_voiture_add') }}">Create new</a>
+    </div>
+{% endblock %}

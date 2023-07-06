@@ -16,7 +16,7 @@
                 <th>Adress</th>
                 <th>Tel</th>
                 <th>Height</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -28,7 +28,7 @@
                 <td>{{ user.CIN }}</td>
                 <td>{{ user.Adress }}</td>
                 <td>{{ user.Tel }}</td>
-                <td>{{ user.height }}</td>
+                <td>{{ user.height }} m</td>
                 <td class="center">
                     <div class="d-flex ">
                         <a class="btn btn-primary me-2" href="{{ path('app_user_show', {'id': user.id}) }}">Show</a>

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Voiture{% endblock %}
+
+{% block body %}
+<div class="container">
+    <br>
+    <h1>Edit voiture</h1>
+    <br>
+ {{ form_start(form, {"attr":{"class":"style_form"}}) }}
+
+    {{ form_row(form.type) }}
+    {{form_row(form.modele) }}
+    {{form_row(form.color) }}
+    {{form_row(form.number) }}
+    {{form_row(form.marque) }}
+    <br>
+    <button  class="btn btn-primary" href="{{ path('app_voiture_index') }}" >{{ button_label|default('UPDATE') }}</button>
+    
+    {{ form_end(form,{render_rest:true}) }}
+</div>
+<br><br>
+{% endblock %}

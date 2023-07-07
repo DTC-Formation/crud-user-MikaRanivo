@@ -5,11 +5,17 @@
 <div class="container">
     <h1> Ajoute Voiture</h1>
     <br>
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
+    {{ form_start(form, {"attr":{"class":"style_form"}}) }}
+
+    {{ form_row(form.type, {"attr":{ "placeholder":"Ajouter le type de voiture"}}) }}
+    {{form_row(form.modele, {"attr":{"placeholder":"Ajouter le Modele du voiture"}}) }}
+    {{form_row(form.color, {"attr": {"placeholder":"Ajouter la couleur du voiture"}}) }}
+    {{form_row(form.number, {"attr":{"placeholder":"Ajouter l'Immatriculation"}}) }}
+    {{form_row(form.marque, {"attr":{"placeholder": "Ajouter Marque du voiture"}}) }}
     <br>
     <button  class="btn btn-primary" href="{{ path('app_voiture_index') }}" >{{ button_label|default('Save') }}</button>
-    {{ form_end(form) }}
+    
+    {{ form_end(form,{render_rest:true}) }}
 
 
 

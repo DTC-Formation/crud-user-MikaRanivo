@@ -156,3 +156,10 @@ class VoitureRepository extends ServiceEntityRepository
         }
     }    
 }
+
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <br>
+    <button  class="btn btn-primary" href="{{ path('app_voiture_index') }}" >{{ button_label|default('Save') }}</button>
+    {{ form_end(form) }}

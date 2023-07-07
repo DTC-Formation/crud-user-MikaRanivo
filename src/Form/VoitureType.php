@@ -18,28 +18,33 @@ class VoitureType extends AbstractType
         $builder
             ->add('type',TextType::class,[
                "attr"=>[
-                    "placeholder"=>"Type du voiture",
+                    "placeholder"=>"Type",
+                    
                ],
+               "label"=>"Type",
             ])
             ->add('modele',TextType::class,[
                 "attr"=>[
-                    "placeholder"=>"Modele du voiture",
+                    "placeholder"=>"Modele",
                 ],
+                "label"=>"Modele",
 
             ])
             ->add('color', TextType::class,[
                 "attr"=>[
-                    "placeholder"=>"Couleur du voiture",
+                    "placeholder"=>"Couleur",
                 ],
+                "label"=>"Couleur",
             ])
             ->add('number', TextType::class, [
                 "attr"=>[
-                    "placeholder"=>"Numero d'imatriculation du voiture",
+                    "placeholder"=>"Imatriculation ",
                 ],
+                "label"=>"Immatriculation",
             ])
             ->add('marque', TextType::class,[
                 "attr"=>[
-                    "placeholder"=>"Marque du voiture",
+                    "placeholder"=>"Marque",
                 ],
             ]);
         
@@ -50,7 +55,7 @@ class VoitureType extends AbstractType
     {
         $resolver->setDefault([
             'data_class' => Voiture::class,
-            'required'=> true,
+            'required'=> false,
         ]);
 
     }
